@@ -1,167 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Projects</title>
 
-    <!-- CSS code -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- CSS code -->
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- Awesome Fonts -->
-    <script src="https://kit.fontawesome.com/21ccdd2009.js" crossorigin="anonymous"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Awesome Fonts -->
+  <script src="https://kit.fontawesome.com/21ccdd2009.js" crossorigin="anonymous"></script>
 </head>
-<body>
-   <div class="container">
 
-<!-- Section header -->
+<body>
+  <div class="container">
+
+    <!-- Section header -->
     <div class="header">
 
-      <div class = "search">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="search" name = "search">
-      </div>
+      <div class="top-header">
 
-      <div class = "profile">
-        <ul>
-            <i class="fa fa-bell" aria-hidden="true"></i>
-            <li>avatar</li>
-            <li>First and Last</li>
-        </ul>
-      </div>
-
-      <div class="greeting">
-        <h6>Hi there</h6>
-        <h2>First and Last (@last)</h2>
-      </div>
-
-      <div class="buttons">
-        <button class="buttonStyle">NEW</button>
-        <button class="buttonStyle">UPLOAD</button>
-        <button class="buttonStyle">SHARE</button>
-      </div>
+        <div class="search-container">
+          <form action="">
+            <button type = "submit" class ="search-button">
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+            <input type="text" placeholder="Search ..." name ="search" class ="search-field"/>
+          </form>
      
+        </div>
+        <div class="control">
+          <a href="https://github.com/xsymmetry9/Admin-Dashboard/#">
+            <span class="fa fa-sun-o fa-2x" aria-hidden="true"></span>
+          </a>
+
+          <a href="https://github.com/xsymmetry9/Admin-Dashboard/#">
+            <span class="fa fa-moon-o fa-2x" aria-hidden="true"></span>
+          </a>
+
+          <a href="https://github.com/xsymmetry9/Admin-Dashboard" target="_blank" title="GitHub repo for this project">
+            <span class="fa fa-github fa-2x" aria-hidden="true"></span>
+
+          </a>
+        </div>
+
+      </div>
+
+      <div class="bottom-header">
+        <div class="greeting">
+          <h3>Welcome,</h3>
+          <h2>My Learning Project</h2>
+        </div>
+  
+        <div class="social-media">
+          <button type="button" class="buttonStyle">NEW</button>
+          <button type ="button" class="buttonStyle">UPLOAD</button>
+          <button type="button" class="buttonStyle">SHARE</button>
+        </div>  
+
+      </div>
+
     </div>
-<!-- Section sideBar -->
+    <!-- Section sideBar -->
     <div class="nav">
-        
-        <!-- Navigation Bar Section -->
-        <div class="logo">
-            <h2>Dashboard</h2>
-        </div>
 
-        <div class="navCard">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <h4>Home</h4>
-        </div>
+      <!-- Navigation Bar Section -->
+      <div class="logo">
+        <h2>Dashboard</h2>
+      </div>
 
-        <div class="navCard"> 
-            <i class="fa fa-address-card" aria-hidden="true"></i>
-            <h4>Profile</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-home side-icon" aria-hidden="true"></i>
+        <h4>Home</h4>
+      </button>
 
-        <div class="navCard"> 
-            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-            <h4>Messages</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-address-card side-icon" aria-hidden="true"></i>
+        <h4>Profile</h4>
+      </button>
 
-        <div class="navCard"> 
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <h4>History</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-commenting-o side-icon" aria-hidden="true"></i>
+        <h4>Messages</h4>
+      </button>
 
-        <div class="navCard"> 
-            <i class="fa fa-tasks" aria-hidden="true"></i>
-            <h4>Tasks</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-clock-o side-icon" aria-hidden="true"></i>
+        <h4>History</h4>
+      </button>
+
+      <button class="navCard">
+        <i class="fa fa-tasks side-icon" aria-hidden="true"></i>
+        <h4>Tasks</h4>
+      </button>
     </div>
 
     <!-- Setting and Service Section -->
     <div class="nav2">
-        <div class="navCard"> 
-            <i class="fa fa-sliders" aria-hidden="true"></i>
-            <h4>Settings</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-sliders side-icon" aria-hidden="true"></i>
+        <h4>Settings</h4>
+      </button>
 
-        <div class="navCard">
-            <i class="fa fa-question" aria-hidden="true"></i> 
-            <h4>Support</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-question side-icon" aria-hidden="true"></i>
+        <h4>Support</h4>
+      </button>
 
-        <div class="navCard">
-            <i class="fa fa-shield" aria-hidden="true"></i> 
-            <h4>Privacy</h4>
-        </div>
+      <button class="navCard">
+        <i class="fa fa-shield side-icon" aria-hidden="true"></i>
+        <h4>Privacy</h4>
+      </button>
     </div>
-<!-- This is where my portfolio goes -->
+    <!-- This is where my portfolio goes -->
     <div class="portfolio">
-        <h3>Your Projects</h3>
-        <div class="projects">
-            <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">Project Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-
+      <h3>Your Projects</h3>
+      <div class="projects">
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
         </div>
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+          <p class="title">Project Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Announcement Section -->
     <div class="announcement">
-        <div class="announcementContainer">
-            <h3>Announcement</h3>
-            <div class="card">
-                <p class="title">News Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">News Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
-              <div class="card">
-                <p class="title">News Title</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              </div>
+      <div class="announcementContainer">
+        <h3>Announcement</h3>
+        <div class="card">
+          <p class="title">News Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
         </div>
+        <div class="card">
+          <p class="title">News Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+        <div class="card">
+          <p class="title">News Title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+        </div>
+      </div>
     </div>
 
     <!-- Trending Section -->
     <div class="trending">
-        <h3>Trending</h3>
-        <div>
-            <div>Dog</div>
-            <div>Cat</div>
-            <div>Cell phones</div>
-            <div>Netflix</div>
-        </div>
-   
+      <h3>Trending</h3>
+      <div>
+        <div>Dog</div>
+        <div>Cat</div>
+        <div>Cell phones</div>
+        <div>Netflix</div>
+      </div>
+
     </div>
 
     <div class="footer">
-        <p>Copyright @ xsymmetry</p> 
+      <p>Copyright @ xsymmetry</p>
     </div>
 
-   </div>
-    
+  </div>
+
 </body>
+
 </html>

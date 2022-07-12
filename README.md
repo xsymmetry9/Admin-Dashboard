@@ -6,4 +6,4 @@ Instruction: Create an Admin Dashboard that looks similar to the following.
 
 ## Websites used for this website
 
-- Search icon was made by Maxim Basinski Premium from www.flaticon.com
+- Used fontawesome https://fontawesome.com/v4/
