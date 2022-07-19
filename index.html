@@ -9,8 +9,9 @@
 
   <!-- CSS code -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Google Font -->
+  <!-- JS Script -->
+  <script src="code.js" defer></script>  
+<!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
@@ -72,22 +73,16 @@
     </div>
     <!-- Section sideBar -->
     <div class="side-bar">
-
       <!-- Added this div for position: sticky -->
       <div class="nav-bar">
-
-        <!-- Navigation Bar Section -->
-      
         <h2 class = "logo">Dashboard</h2>
         <!-- Probably should use anchor tags. -->
-
         <!-- Container -->
         <div class="nav"> 
           <button class="navCard">
             <i class="fa fa-home side-icon" aria-hidden="true"></i>
             <h4>Home</h4>
           </button>
-  
           <button class="navCard">
             <i class="fa fa-address-card side-icon" aria-hidden="true"></i>
             <h4>Profile</h4>
@@ -136,67 +131,71 @@
       </div>
     </div>
   
-  
       <!-- This is where my portfolio goes -->
     <div class="portfolio">
         <h3>My Projects</h3>
         <div class="projects">
           <!-- My First Card -->
-          <div class="card">
+          <div class="card" id = "card-x">
             <div class="description">
               <p class="title">My First Project</p>
               <p>Created my first HTML project.</p>
             </div>
             <div class="icons">
-              <i class="fa fa-code-fork fa-lg icon-card" aria-hidden="true"></i>
-              <i class="fa fa-star-o icon-card fa-lg" aria-hidden="true"></i>
-              <i class="fa fa-github icon-card fa-lg" aria-hidden="true"></i>
+              <a href="#"><img class ="icon-card" src="icons/github.png" alt="star"></a>
+              <a href="#"><img class ="icon-card" src="icons/favorite.png" alt="star"></a>
+              <a href="#"><img class ="icon-card" src="icons/comment.png" alt="star"></a>
             </div>
           </div>
-          <!-- Second Card -->
-          <div class="card">
+          
+            <div class="card" id = "card-x">
             <div class="description">
               <p class="title">My Second Project</p>
               <p>Created my first second project. hat the most difficult of web developing is
                 getting more the website.</p>
             </div>
             <div class="icons">
-              <i class="fa fa-code-fork fa-lg icon-card" aria-hidden="true"></i>
-              <i class="fa fa-star-o icon-card fa-lg" aria-hidden="true"></i>
-              <i class="fa fa-github icon-card fa-lg" aria-hidden="true"></i>
+              <a href="#"><img class ="icon-card" src="icons/github.png" alt="star"></a>
+              <a href="#"><img class ="icon-card" src="icons/favorite.png" alt="star"></a>
+              <a href="#"><img class ="icon-card" src="icons/comment.png" alt="star"></a>
             </div>
-          </div>
-        </div>
+          </div> 
+ 
 
-
-        <!-- -------------------------End of Section----------------------------------------- -->
+        <!-- <-------------------------End of Section----------------------------------------- --> 
       </div>
     </div>
 
     <!-- Announcement Section -->
     <div class="right-side-bar">
       <h3>Announcement</h3>
-
+        <!-- -------------------------------------------------------------------------------- -->
       <div class="announcement-container">
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="card">
           <p class="title">News Title</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="card">
           <p class="title">News Title</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="card">
           <p class="title">News Title</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
+        <!-- -------------------------------------------------------------------------------- -->
       </div>
+        <!-- -------------------------------------------------------------------------------- -->
 
 
       <!-- Trending Section -->
       <h3>Followers</h3>
-
+        <!-- -------------------------------------------------------------------------------- -->
       <div class="follower-container">
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="fol-card">
           <img src="icons/young-man.png" alt="">
           <div class="desc">
@@ -204,6 +203,7 @@
             <p class="information">A doctor who lives in a country freely and loves to play video games</p>
           </div>
         </div>
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="fol-card">
           <img src="icons/young-man.png" alt="">
           <div class="desc">
@@ -211,6 +211,7 @@
             <p class="information">A writer who lives in a village who enjoys life.</p>
           </div>
         </div>
+        <!-- -------------------------------------------------------------------------------- -->
         <div class="fol-card">
           <img src="icons/young-man.png" alt="">
           <div class="desc">
@@ -218,11 +219,11 @@
             <p class="information">A programmer who is already retired and is trying to learn something new.</p>
           </div>
         </div>
-
       </div>
-
-
+        <!-- ----------------------------------The end of Trending Section---------------------------------------------- -->
     </div>
+        <!-- ------------------------------------The end of Right Side Section----------------------------------------- -->
+
 
   </div>
 

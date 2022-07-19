@@ -20,11 +20,9 @@ body {
 .container {
   display: grid;
   grid-template-columns: 350px minmax(400px, 1fr) 400px;
-  grid-template-rows: 350px 5fr;
   grid-template-areas:
     "side-bar header header"
     "side-bar portfolio right-side-bar";
-  height: 100vh;
 }
 
 .header {
@@ -95,12 +93,12 @@ body {
   width: 100%;
   justify-content: end;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .control span {
-  height: 32px;
-  width: 32px;
+  height: 30px;
+  width: 30px;
   color: var(--varyDarkBlue);
 }
 
@@ -134,7 +132,7 @@ body {
   align-items: center;
   gap: 25px;
   padding: 0 20px;
-}
+} 
 
 .social-media .buttonStyle {
   color: var(--veryLightGray);
@@ -152,7 +150,7 @@ body {
   background: linear-gradient(180deg, #4bb2f7 0%, #36a0f6 100%);
 }
 
-/* Sidebar Section */
+/* ----------------Sidebar Section------------------ */
 
 .side-bar{
   background: #4B91F7;
@@ -211,6 +209,8 @@ h4 {
   margin-top: 50px;
 }
 
+/* ------------------------------Projects Section--------------------------------- */
+
 .portfolio {
   grid-area: portfolio;
 }
@@ -225,10 +225,9 @@ h4 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
-  /* grid-template-rows: repeat(2, 1fr);  */
+  grid-template-columns: repeat(auto-fit, 350px);
   gap: 5px;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -238,8 +237,8 @@ h4 {
   color: var(--grayishBlue);
   border-radius: 25px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin: 10px 10px;
-  height: 250px;
+  margin: 10px 25px;
+  height: 400px;
   padding: 0 10%;
   display: grid;
   grid-template-rows: 1fr 50px;
