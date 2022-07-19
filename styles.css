@@ -19,7 +19,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 350px minmax(400px, 2fr) 400px;
+  grid-template-columns: 350px minmax(400px, 1fr) 400px;
+  grid-template-rows: 350px 5fr;
   grid-template-areas:
     "side-bar header header"
     "side-bar portfolio right-side-bar";
@@ -27,6 +28,8 @@ body {
 }
 
 .header {
+  position: sticky;
+  top: 0px;
   grid-area: header;
   display: grid;
   grid-template-areas:
@@ -150,40 +153,44 @@ body {
 }
 
 /* Sidebar Section */
-.side-bar {
+
+.side-bar{
   background: #4B91F7;
-  color: var(--veryLightGray);
   grid-area: side-bar;
-}
 
-.logo {
-  height: 160px;
+}
+.nav-bar {
+  position: sticky;
+  top: 0px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--veryLightGray);
+  align-items: left;
 }
 
-.logo h2 {
-  text-align: center;
+.logo{
   font-size: 3rem;
   letter-spacing: -3px;
   text-shadow: .1em .1em 0 hsl(200 50% 30%);
 }
 
-.nav1 {
-  display: flex;
-  flex-direction: column;
-}
-
 .navCard {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 20px;
+  width: 100%;
   gap: 20px;
   background: transparent;
   border: none;
   color: var(--veryLightGray);
-  font-size: 20px;
-  padding: 10px;
+  font-size: 16px;
+}
+.navCard:hover{
+  opacity: 50%;
+
 }
 
 .side-icon {
@@ -194,14 +201,14 @@ body {
 h4 {
   justify-self: start;
   letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav2 {
-  /* padding: 40px 25px; */
   grid-column: 1 / 2;
   display: grid;
   margin-top: 50px;
-  /* gap: 25px; */
 }
 
 .portfolio {
