@@ -169,6 +169,7 @@ body{
   gap: 20px;
   color: var(--veryLightGray);
   justify-content: space-between;
+  height: 100vh;
 }
 
 .logo{
@@ -206,10 +207,7 @@ a {
   padding: 0px;
   text-decoration: none;
 }
-
-.nav2 {
-  grid-column: 1 / 2;
-  display: grid;
+#links, #setting{
   margin-top: 50px;
 }
 

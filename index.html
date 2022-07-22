@@ -10,7 +10,9 @@
   <!-- CSS code -->
   <link rel="stylesheet" href="styles.css">
   <!-- JS Script -->
-  <script src="code.js" defer></script>  
+  <script src="getCards.js" defer></script>  
+  <script src="toggle.js" defer></script>
+  
 <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,55 +77,59 @@
     <div class="side-bar">
       <!-- Added this div for position: sticky -->
       <div class="nav-bar">
-
-        <h2 class = "logo">Dashboard</h2>
-        <!-- Probably should use anchor tags. -->
-        <!-- Container -->
-        <div class="nav"> 
-          <div class="navCard">
-            <a href="#"><i class="fa fa-home side-icon" aria-hidden="true"></i>Home
-            </a>
-          </div>
-          <div class="navCard">
-            <a href="#"><i class="fa fa-address-card side-icon" aria-hidden="true"></i>Profile
-            </a>
-          </div>
-          <div class="navCard">
-            <a href="#"><i class="fa fa-commenting-o side-icon" aria-hidden="true"></i>Messages
-            </a>
-          </div>
-          <div class="navCard">
-            <a href="#"><i class="fa fa-clock-o side-icon" aria-hidden="true"></i>History
-            </a>
-          </div>
-          <div class="navCard">
-            <a href="#"><i class="fa fa-tasks side-icon" aria-hidden="true"></i>Tasks
-            </a>
-          </div>
-
-        
-        </div> 
-        <!-- End Container -->
+        <div class="logo-link"> <!--Nest Logo and Link together-->
+          <h2 class = "logo">Dashboard</h2>
+          <!-- Probably should use anchor tags. -->
+          <!-- Container -->
+          <div class="nav" id="links"> 
+            <div class="navCard">
+              <a href="#"><i class="fa fa-home side-icon" aria-hidden="true"></i>Home
+              </a>
+            </div>
+            <div class="navCard">
+              <a href="#"><i class="fa fa-address-card side-icon" aria-hidden="true"></i>Profile
+              </a>
+            </div>
+            <div class="navCard">
+              <a href="#"><i class="fa fa-commenting-o side-icon" aria-hidden="true"></i>Messages
+              </a>
+            </div>
+            <div class="navCard">
+              <a href="#"><i class="fa fa-clock-o side-icon" aria-hidden="true"></i>History
+              </a>
+            </div>
+            <div class="navCard">
+              <a href="#"><i class="fa fa-tasks side-icon" aria-hidden="true"></i>Tasks
+              </a>
+            </div>
   
-        <!-- Setting and Service Section -->
-        <div class="nav">
-
-          <div class="navCard">
-            <a href="#"><i class="fa fa-sliders side-icon" aria-hidden="true"></i>Tasks
-            </a>
+          
+          </div> 
+          <!-- End Container -->
+    
+          <!-- Setting and Service Section -->
+          <div class="nav" id="setting">
+  
+            <div class="navCard">
+              <a href="#"><i class="fa fa-sliders side-icon" aria-hidden="true"></i>Tasks
+              </a>
+            </div>
+  
+            <div class="navCard">
+              <a href="#"><i class="fa fa-question side-icon" aria-hidden="true"></i>Support
+              </a>
+            </div>
+  
+            <div class="navCard">
+              <a href="#"><i class="fa fa-shield side-icon" aria-hidden="true"></i>Privacy
+              </a>
+            </div>
           </div>
+          <!-- End of Service Section -->
 
-          <div class="navCard">
-            <a href="#"><i class="fa fa-question side-icon" aria-hidden="true"></i>Support
-            </a>
-          </div>
 
-          <div class="navCard">
-            <a href="#"><i class="fa fa-shield side-icon" aria-hidden="true"></i>Privacy
-            </a>
-          </div>
         </div>
-        <!-- End of Service Section -->
+       
   
         <div class="attribute">
           <p>Odin Project by Gary Lei</p>
