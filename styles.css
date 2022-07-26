@@ -9,17 +9,20 @@
   --weight1: 200;
   --weight2: 400;
   --weight3: 600;
+
+  --lightBackground: #c7e0fd;
+  --darkBackground: #1B2430;
 }
 
 body{
-  background-color: #c7e0fd;
   margin: 0px;
   padding: 0px;
 }
 
 .container {
+  background-color: var(--lightBackground);
   display: grid;
-  grid-template-columns: 350px minmax(400px, 1fr) 400px;
+  grid-template-columns: minmax(350px,1fr) minmax(400px, 3fr) minmax(400px,1fr);
   grid-template-areas:
     "side-bar header header"
     "side-bar portfolio right-side-bar";
@@ -51,7 +54,7 @@ body{
 .search-container form {
   display: flex;
   height: 40px;
-  background-color: rgba(54, 122, 246, 0.25);
+  background-color:  #c7e0fd;
   border-radius: 25px;
   padding-left: 20px;
   box-shadow: 5px 5px 5px gray inset;
@@ -79,6 +82,9 @@ body{
   opacity: 50%;
 }
 
+
+/* Control Functions  */
+
 .bottom-header {
   grid-area: bottom-header;
   display: flex;
@@ -86,7 +92,6 @@ body{
   justify-content: space-between;
 }
 
-/* Control Functions  */
 .control {
   display: flex;
   width: 100%;
@@ -95,10 +100,16 @@ body{
   gap: 30px;
 }
 
-.control span {
+.control button, .control span{
   height: 30px;
   width: 30px;
   color: var(--varyDarkBlue);
+
+}
+.control button{
+  background: none;
+  border: none;
+
 }
 
 /* Personal Message */
